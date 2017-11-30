@@ -1,0 +1,6 @@
+.card-timestamp {
+    font-size: var(--timestamp);
+    color: var(--tertiary);
+    margin: 0;
+    text-align: left;
+}

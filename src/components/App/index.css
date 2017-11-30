@@ -1,0 +1,105 @@
+/* General */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: 0.5s;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+strong { font-weight: bold }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+:focus {
+  outline: none;
+}
+
+/* CSS variables */
+
+:root {
+
+  /* Typography */
+  --h1:           2.5rem;
+  --h2:           2rem;
+  --h3:           1.5rem;
+  --h4:           1rem;
+  --h5:           0.7rem;
+  --button:       0.8rem;
+  --timestamp:    0.9rem;
+
+  /* Colors */
+  --primary:              #212738;
+  --secondary:            #0ECFF0;
+  --tertiary:             #798085;
+  --additional:           #FB5658;
+  --additional-hover:     #e14d4f;
+  --white:                #fff;
+}
+
+/* App wrapper */
+.app {
+  display: flex;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.app h1 {
+  text-align: center;
+}
+
+.app .list-half,
+.app .detail-half {
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .app {
+    position: relative;
+  }
+
+  .app .list-half,
+  .app .detail-half {
+    width: 100%;
+  }
+
+  .app .detail-half {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    background: var(--white);
+  }
+
+  .app .detail-half .detail-wrap {
+    padding: 20px;
+  }
+}

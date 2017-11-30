@@ -1,0 +1,17 @@
+.btn {
+    padding: 15px;
+    border-radius: 15px;
+    background: var(--additional);
+    color: var(--white);
+    cursor: pointer;
+    line-height: 0;
+    height: 100%;
+    font-size: var(--button);
+    transition: 0.5s;
+}
+.btn:hover {
+    background: var(--additional-hover);
+}
+button.btn {
+    border: none;
+}

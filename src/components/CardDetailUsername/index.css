@@ -1,0 +1,7 @@
+.card-detail-username {
+    font-size: var(--h3);
+    color: var(--tertiary);
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--tertiary);
+}

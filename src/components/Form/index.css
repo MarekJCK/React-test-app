@@ -1,0 +1,10 @@
+input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    color: var(--tertiary);
+    font-size: 15px;
+    border: 1px solid var(--tertiary);
+    background: white;
+    margin: 10px 0;
+}
